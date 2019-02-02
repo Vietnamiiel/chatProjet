@@ -6,9 +6,42 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("./images/wallpaper.jpg") no-repeat fixed;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.todolist {
+  margin: 20px ;
+}
+
+.chat {
+  margin: 20px;
+}
+
+.App {
+  margin: auto;
+  width: 50%;
+}
+/* CSS des taches*/
+.item_show {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.list-group-item {
+  padding: 0;
+  border: none;
+  font-size: 20px;
+  color: #4258cd;
+}
+
+/*Taille des inputs*/
+.Input {
+  width: 90%;
+  margin: 20px;
 }

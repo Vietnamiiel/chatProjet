@@ -1,28 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import TodoList from "./components/TodoList";
+import Chat from "./components/Chat";
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className="container-fluid main">
+                <div className="row">
+                    <div className="col-lg-6 todolist">
+                        <TodoList/>
+                    </div>
+                    <div className="col-lg-5 chat">
+                        <Chat/>
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
 
 export default App;
